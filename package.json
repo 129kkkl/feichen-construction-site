@@ -1,0 +1,21 @@
+{
+  "name": "feichen-construction-site",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "《飞尘工地》——可交互游览的实时三维体素建筑工地",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build && node scripts/build-standalone.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "standalone": "node scripts/build-standalone.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "vite": "8.3.5"
+  }
+}
